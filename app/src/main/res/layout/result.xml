@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+
+
+    <TextView
+        android:text="New Cookies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/textView2"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="@android:color/background_light"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/closed_cookie"
+        android:id="@+id/imageView"
+        android:layout_weight="0.36"
+        android:background="@android:color/background_light" />
+
+    <TextView
+        android:text="Result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        android:id="@+id/textlable"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" />
+
+    <TextView
+        android:text="Result : No Result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/textResult"
+        android:textSize="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="35dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:text="Date :"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textDate"
+        android:gravity="right"
+        android:textSize="15dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="35dp"
+        android:background="?attr/colorButtonNormal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="182dp"
+        android:background="@color/Blackground"
+        android:layout_weight="1.13">
+
+        <Button
+            android:text="Shake"
+            android:layout_width="150dp"
+            android:id="@+id/shakeButton"
+            android:layout_weight="0.36"
+            android:background="@drawable/roundedbutton"
+            android:layout_height="150dp"
+            android:layout_gravity="center_vertical|center_horizontal|center"
+            android:onClick="BackMethod"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</LinearLayout>
