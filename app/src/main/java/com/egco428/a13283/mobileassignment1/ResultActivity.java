@@ -74,7 +74,7 @@ public class ResultActivity extends AppCompatActivity implements SensorEventList
 
     @Override
     public void onSensorChanged(SensorEvent event) {
-        if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER && flag == false){
+        if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER && !flag){
             getAccelerometer(event);
         }
 
@@ -85,7 +85,6 @@ public class ResultActivity extends AppCompatActivity implements SensorEventList
         float x = values[0];
         float y = values[1];
         float z = values[2];
-        int count = 0;
 
         float accelationSquareRoot = (x * x + y * y + z * z)
                 / (SensorManager.GRAVITY_EARTH * SensorManager.GRAVITY_EARTH);
